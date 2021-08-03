@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kartik Bhat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="I am Kartik Bhat" />
+  <meta name="keywords" content="kartik, bhat, kartik-bhat, Kartik, Bhat, KARTIK, BHAT, Karthik, karthik" />
+  <meta name="author" content="Kartik Bhat" />
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+  <link rel="stylesheet" href="css/transition-animations.css" type="text/css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="css/main-red.css" type="text/css">
+
+  <!-- This styles needs for demo -->
+  <link rel="stylesheet" href="preview/lmpixels-demo-panel.css" type="text/css">
+  <!-- /This styles needs for demo -->
+
+  
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif !important;
+    }
+
+    .owl-carousel .home-page-description {
+      color: #fff !important;
+    }
+
+    .my-photo img {
+      border-radius: 50% !important;
+    }
+
+    .header.header-color-light .site-main-menu li.active a:after {
+      background-color: #6a3093;
+    }
+
+    .site-title {
+      color: #6a3093 !important;
+    }
+
+    .site-main-menu li a:hover:after,
+    .site-main-menu li.active a:after {
+      width: 6px;
+    }
+
+    .section-title {
+      color: #bda3cf;
+    }
+
+    .check-list {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .check-list li {
+      position: relative;
+      list-style-type: none;
+      padding-left: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .check-list li:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 5px;
+        height: 11px;
+        border-width: 0 2px 2px 0;
+        border-style: solid;
+        border-color: #00a8a8;
+        transform-origin: bottom left;
+        transform: rotate(45deg);
+    }
+
+    #laravel .card-header {
+      background-color: #ffb9b4;
+    }
+
+    #laravel .card-body {
+      background-color: #f7e0de;
+    }
+    #vue .card-header {
+      background-color: #97ecc7;
+    }
+
+    #vue .card-body {
+      background-color: #c8ecdc;
+    }
+
+    #flutter .card-header {
+      background-color: #8be0fb;
+    }
+
+    #flutter .card-body {
+      background-color: #d6f4fd;
+    }
+
+    #pwa .card-header {
+      background-color: #c29aff;
+    }
+
+    #pwa .card-body {
+      background-color: #ebe4f6;
+    }
+    
+    #android .card-header {
+      background-color: #bff660;
+    }
+
+    #android .card-body {
+      background-color: #dbf4b0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loading animation -->
+  <div class="preloader h-100">
+    <div class="h-100 d-flex justify-content-center align-items-center">
+      <img src="images/sig.png" alt="image">
+    </div>
+  </div>
+  <!-- /Loading animation -->
+
+  <div id="page" class="page">
+    <!-- Header -->
+    <header id="site_header" class="header mobile-menu-hide header-color-light">
+      <div class="my-photo tilt-effect">
+        <img src="images/photo.jpg" alt="image">
+      </div>
+
+      <div class="site-title-block">
+        <h1 class="site-title">Kartik Bhat</h1>
+      </div>
+
+      <!-- Navigation -->
+      <div class="site-nav">
+        <!-- Main menu -->
+        <ul id="nav" class="site-main-menu">
+          <li onclick="showMenu()">
+            <a class="pt-trigger" href="#home" data-animation="21"><i
+                class="menu-icon pe-7s-icon pe-7s-home"></i>Home</a><!-- href value = data-id without # of .pt-page. -->
+          </li>
+          <li onclick="showMenu()">
+            <a class="pt-trigger" href="#about_me" data-animation="17"><i
+                class="menu-icon pe-7s-icon pe-7s-user"></i>About me</a>
+          </li>
+          <li onclick="showMenu()">
+            <a class="pt-trigger" href="#resume" data-animation="18"><i
+                class="menu-icon pe-7s-icon pe-7s-id"></i>Resume</a>
+          </li>
+          <li onclick="showMenu()">
+            <a class="pt-trigger" href="#projects" data-animation="19"><i
+                class="menu-icon pe-7s-icon pe-7s-portfolio"></i>Proejcts</a>
+          </li>
+          <li onclick="showMenu()">
+            <a class="pt-trigger" href="#knowledge" data-animation="22"><i
+                class="menu-icon pe-7s-icon pe-7s-light"></i>Knowledge</a>
+          </li>
+          
+        </ul>
+        <!-- /Main menu -->
+      </div>
+      <!-- Navigation -->
+    </header>
+    <!-- /Header -->
+
+    <!-- Mobile Header -->
+    <div class="mobile-header mobile-visible">
+      <div class="mobile-logo-container">
+        <div class="mobile-site-title">Kartik Bhat</div>
+      </div>
+
+      <a class="menu-toggle mobile-visible" onclick="showMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- /Mobile Header -->
+
+    <!-- Main Content -->
+    <div id="main" class="site-main">
+      <!-- Page changer wrapper -->
+      <div class="pt-wrapper" style="background-image: url(images/bg.png);">
+        <!-- Subpages -->
+        <div class="subpages">
+
+          <!-- Home Subpage -->
+          <section class="pt-page pt-page-1 section-without-bg section-paddings-0 table" data-id="home">
+            <div class="section-inner">
+              <div class="home-page-block">
+                <h2 class="nameText">Kartik Bhat</h2>
+                <div class="owl-carousel text-rotation">
+                  <div class="item">
+                    <p class="home-page-description">Laravel  |   VueJs   |   Flutter</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Home Subpage -->
+
+          <!-- About Me Subpage -->
+          <section class="pt-page pt-page-2" data-id="about_me">
+            <div class="section-inner">
+              <div class="section-title-block">
+                <div class="section-title-wrapper clearfix">
+                  <h2 class="section-title">About Me</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
+                  <div class="my-photo-block tilt-effect">
+                    <img src="images/photo.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                  <h3>I am Software Engineer @ Haegl</h3>
+                  <p>Software Engineer by role; Full Stack developer by work &#11136; interest</p>
+                  <p>
+                    Begun my professional journey as a Web Developer; which enhanced me to dive into the web development
+                    profession, since then as a 'software engineer' working on web development technology with popular
+                    web development tools. once a challenging situation made me to learn android development; Android
+                    development, a well expressed interest since college days made me to explore many things in it.
+                    Explored Progressive Web Application (PWA) as well, seems to be a future of web/mobile development
+                  </p>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
+                  <ul class="info-list">
+                    <li><span class="title">Age</span><span class="value">27</span></li>
+                    <li><span class="title">Residence</span><span class="value">Dharwad, Karnataka</span></li>
+                    <li><span class="title">Address</span><span class="value">Rajatgiri Dharwad</span></li>
+                    <li><span class="title">e-mail</span><span class="value">iamkartikbhat23@gmail.com</span>
+                    </li>
+                    <li><span class="title">Mobile</span><span class="value">+91 9483030092</span></li>
+                    <li><span class="title">Alternative Contact</span><span class="value">+91 9972983621</span></li>
+                  </ul>
+
+                  <ul class="social-links flex justify-content-center">
+                    <div class="mx-5 d-flex justify-content-around">
+                      <a class="tip social-button" target='_blank'
+                        href="https://api.whatsapp.com/send?phone=+918553573027" title="WhatsApp"><i
+                          class="fa fa-2x fa-whatsapp"></i></a>
+                    <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
+                    <a class="tip social-button" target='_blank' href="https://www.linkedin.com/in/iamkartikbhat23"
+                        title="LinkedIn"><i class="fa fa-2x fa-linkedin"></i></a>
+                    <a class="tip social-button" target='_blank'
+                        href="https://stackoverflow.com/users/7708141/kartik-bhat" title="Stack Overflow"><i
+                          class="fa fa-2x fa-stack-overflow"></i></a>
+                    
+                    </div>
+                    <!-- <li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                    <li><a class="tip social-button" href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li> -->
+                    <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
+                    <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of About Me Subpage -->
+
+          <!-- Resume Subpage -->
+          <section class="pt-page pt-page-3" data-id="resume">
+            <div class="section-inner">
+              <div class="section-title-block">
+                <div class="section-title-wrapper">
+                  <h2 class="section-title">Resume</h2>
+                  <h5 class="section-description">3+ Years of Experience</h5>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Education</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2016</h5>
+                      <h4 class="event-name">Bachelore of Engineering in Computer Science</h4>
+                      <p>Grade - First Class</p>
+                      <span class="event-description">KLS VDIT</span>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2012</h5>
+                      <h4 class="event-name">PUC</h4>
+                      <p>Grade - First Class</p>
+                      <span class="event-description">Shri Manjunatheshwara PU College</span>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2010</h5>
+                      <h4 class="event-name">Class 10th</h4>
+                      <p>Grade - First Class</p>
+                      <span class="event-description">KE Boards Highschool</span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Experience</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">Apr 2020 - Current</h5>
+                      <h4 class="event-name">Software Engineer</h4>
+                      <span class="event-description">Haegl Technologies Pvt Ltd</span>
+                      <p>Working on Laravel, Vue , Flutter , PWA</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">Aug 2018 - Mar 2020</h5>
+                      <h4 class="event-name">Software Engineer</h4>
+                      <span class="event-description">Chromosis Technologies Pvt Ltd</span>
+                      <p>Worked on Core PHP, Laravel , Android Development</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">Nov 2017 - Jan 2018</h5>
+                      <h4 class="event-name">Web Developer Intern</h4>
+                      <span class="event-description">Astrikos Consulting Pvt Ltd</span>
+                      <p>Learned basics of web developement and android development</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 subpage-block">
+
+                  <div class="block-title">
+                    <h3>Skills</h3>
+                  </div>
+                  <div class="skills-info">
+
+                    <h4>Laravel</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-2"></div>
+                    </div>
+
+                    <h4>PHP</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-3"></div>
+                    </div>
+
+                    <h4>Vue Js</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-3"></div>
+                    </div>
+
+                    <h4>Flutter</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-3"></div>
+                    </div>
+
+                    <h4>PWA</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-7"></div>
+                    </div>
+
+                    <h4>Flutter</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-7"></div>
+                    </div>
+
+                    <h4>Bootstrap</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-2"></div>
+                    </div>
+
+                    <h4>TailwindCSS</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-7"></div>
+                    </div>
+
+                    <h4>MongoDB</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-7"></div>
+                    </div>
+
+                    <h4>MySQL</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-7"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Resume Subpage -->
+
+
+          <!-- Portfolio Subpage -->
+          <section class="pt-page pt-page-4" data-id="projects">
+            <div class="section-inner">
+              <div class="section-title-block">
+                <div class="section-title-wrapper">
+                  <h2 class="section-title">Projects Worked On</h2>
+                </div>
+              </div>
+
+              <!-- Portfolio Content -->
+              <div class="portfolio-content">
+                <!-- Portfolio Grid -->
+                <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-2">
+
+                  <!-- Portfolio Item 1 -->
+                  <figure class="item" data-groups='["all", "chromosis"]'>
+                    <a class="ajax-page-load" href="portfolio-1.html" title="ERP - CRM Projects">
+                      <img src="images/portfolio/1.jpg" alt="">
+                      <div>
+                        <h5 class="name">ERP - CRM Projects : Roles</h5>
+                        <h6>Chromosis Technologies - <b>Core PHP</b>, <b>MySQL</b></h6>
+                        <ul>
+                          <li>UI Enhancement</li>
+                          <li>Logical Analysis</li>
+                          <li>Billing Calculation</li>
+                          <li>PDF Generation</li>
+                          <li>Excel import/export</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 1 -->
+
+                  <!-- Portfolio Item 2 -->
+                  <figure class="item" data-groups='["all", "chromosis"]'>
+                    <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="E-Commerce Websites"
+                      class="lightbox mfp-iframe">
+                      <img src="images/portfolio/2.jpg" alt="">
+                      <div>
+                        <h5 class="name">E-Commerce Websites : Roles</h5>
+                        <h6>Chromosis Technologies - Laravel,MongoDB</h6>
+                        <ul>
+                          <li>Template Customization</li>
+                          <li>Receipt PDF Generation</li>
+                          <li>Email/SMS Integration</li>
+                          <li>Reviews/Comments Validation</li>
+                          <li>Admin Panel development</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 2 -->
+
+                  <!-- Portfolio Item 3 -->
+                  <figure class="item" data-groups='["all","chromosis"]'>
+                    <a href="images/portfolio/full/3.jpg" class="lightbox" title="Political Leader App">
+                      <img src="images/portfolio/3.jpg" alt="">
+                      <div>
+                        <h5 class="name">Political Leader App : Roles</h5>
+                        <h6>Chromosis Technologies - Laravel, Android,SQLite</h6>
+                        <ul>
+                          <li>Offline Data Saving on App</li>
+                          <li>Search and filter provisions</li>
+                          <li>Email/SMS/Call Integration</li>
+                          <li>New feature developement</li>
+                          <li>App Playstore Deployment</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 3 -->
+
+                  <!-- Portfolio Item 4 -->
+                  <figure class="item" data-groups='["all", "astrikos"]'>
+                    <a class="ajax-page-load" href="portfolio-2.html" title="Portfolio Website">
+                      <img src="images/portfolio/4.jpg" alt="">
+                      <div>
+                        <h5 class="name">Portfolio Website : Roles</h5>
+                        <h6>Astrikos Consulting - Bootstrap, Code Igniter</h6>
+                        <ul>
+                          <li>Developemt from scratch</li>
+                          <li>Indivisual Pages design & develpoment</li>
+                          <li>Email Verification</li>
+                          <li>Email Notification</li>
+                          <li>Deployment</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 4 -->
+
+                  <!-- Portfolio Item 5 -->
+                  <figure class="item" data-groups='["all", "astrikos"]'>
+                    <a href="images/portfolio/full/5.jpg" class="lightbox" title="Agriculture Blockchain">
+                      <img src="images/portfolio/5.jpg" alt="">
+                      <div>
+                        <h5 class="name">Agriculture Blockchain: Roles</h5>
+                        <h6>Astrikos Consulting - Code Igniter,MySQL</h6>
+                        <ul>
+                          <li>Template Customization</li>
+                          <li>Farmer/Agent Registration</li>
+                          <li>Email Verification</li>
+                          <li>Filter/Search development</li>
+                          <li>Deployment</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 5 -->
+
+                  <!-- Portfolio Item 6 -->
+                  <figure class="item" data-groups='["all", "haegl"]'>
+                    <a class="ajax-page-load" href="portfolio-3.html" title="School Mgmt System">
+                      <img src="images/portfolio/6.jpg" alt="">
+                      <div>
+                        <h5 class="name">School Mgmt System: Roles</h5>
+                        <h6>Haegl Technologies - Laravel,Flutter,MongoDB</h6>
+                        <ul>
+                          <li>Developemt from scratch</li>
+                          <li>Planning, Analysis, Development</li>
+                          <li>Smoke Testing</li>
+                          <li>API Development for Flutter App</li>
+                          <li>GCP Deployment</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 6 -->
+
+                  <!-- Portfolio Item 8 -->
+                  <figure class="item" data-groups='["all",  "haegl"]'>
+                    <a class="ajax-page-load" href="portfolio-4.html" title="Agricultural Blockchain">
+                      <img src="images/portfolio/7.jpg" alt="">
+                      <div>
+                        <h5 class="name">Agricultural Blockchain App: Roles</h5>
+                        <h6>Haegl Technologies - Laravel,MySQL,Flutter</h6>
+                        <ul>
+                          <li>Developemt from scratch</li>
+                          <li>Planning, Analysis, Development</li>
+                          <li>Flutter App Development</li>
+                          <li>Admin Panel Development</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 8 -->
+
+                  <!-- Portfolio Item 7 -->
+                  <figure class="item" data-groups='["all", "haegl"]'>
+                    <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Alumni Mgmt System"
+                      class="lightbox mfp-iframe">
+                      <img src="images/portfolio/8.jpg" alt="">
+                      <div>
+                        <h5 class="name">Alumni Mgmt System: Roles</h5>
+                        <h6>Haegl Technologies - Laravel,MySQL,PWA</h6>
+                        <ul>
+                          <li>Developemt from scratch</li>
+                          <li>Planning, Analysis, Development</li>
+                          <li>Smoke Testing</li>
+                          <li>PWA-System/Mobile Installable App</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 7 -->
+
+                  <!-- Portfolio Item 9 -->
+                  <figure class="item" data-groups='["all","haegl"]'>
+                    <a href="images/portfolio/full/9.jpg" class="lightbox" title="Hospital Mgmt System">
+                      <img src="images/portfolio/9.jpg" alt="">
+                      <div>
+                        <h5 class="name">Hospital Mgmt System: Roles</h5>
+                        <h6>Haegl Technologies - Laravel,VueJS,MySQL</h6>
+                        <ul>
+                          <li>Developemt from scratch</li>
+                          <li>Team Lead</li>
+                          <li>Planning, Analysis, Development</li>
+                          <li>Smoke Testing</li>
+                          <li>C-Panel Deployment</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 9 -->
+                </div>
+                <!-- /Portfolio Grid -->
+
+              </div>
+              <!-- /Portfolio Content -->
+            </div>
+          </section>
+          <!-- /Portfolio Subpage -->
+
+          <!-- Knowledge Subpage -->
+          <section class="pt-page pt-page-4" data-id="knowledge">
+            <div class="section-inner">
+              <div class="section-title-block">
+                <div class="section-title-wrapper">
+                  <h2 class="section-title">Key Knowledges</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="laravel" class="card">
+                        <div class="card-header">
+                          <div class="d-flex align-content-center">
+                            <img src="images/knowledge/laravel.png" height="50" width="50"/>
+                            <div class="ms-2 d-flex align-self-end"><h2>Laravel</h2></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <ul class="check-list">
+                            <li>MVC Concepts</li>
+                            <li>Authentication, middleware</li>
+                            <li>Sessions, Cookies</li>
+                            <li>Template customization</li>
+                            <li>Blade Engine</li>
+                            <li>Helpers, Facades, Traits</li>
+                            <li>Eloquent ORM - Collections, Relationships, Serilization</li>
+                            <li>Migration, Seeding</li>
+                            <li>MongoDB, MySql Connections</li>
+                            <li>3rd party library integration</li>
+                            <li>PDF generation, Excel Import/Export, FFMPEG</li>
+                            <li>Payment Gateway Integration</li>
+                            <li>Email/SMS/Call Integration</li>
+                            <li>Localization : Multilingual support</li>
+                            <li>Events, Jobs, Queuing</li>
+                            <li>API Development</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                      <div id="pwa" class="card">
+                        <div class="card-header">
+                          <div class="d-flex align-content-center">
+                            <img src="images/knowledge/pwa.png" height=30 width=70/>
+                            <div class="ms-2 d-flex align-self-end"><h2>Progressive Web Application</h2></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <ul class="check-list">
+                            <li>Service Worker</li>
+                            <li>Laravel Integration</li>
+                            <li>PC/Mobile Installable App</li>
+                            <li>Push Notification</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                      <div class="card">
+                          <div class="d-flex justify-content-around">
+                            <img src="images/knowledge/bootstrap.png" data-toggle="tooltip" data-placement="bottom" title="Bootstrap" class="d-flex align-self-center" height="50" width="60"/>
+                            <img src="images/knowledge/tailwind-css.png" data-toggle="tooltip" data-placement="bottom" title="Tailwind CSS" class="d-flex align-self-center" height="40" width="60"/>
+                            <img src="images/knowledge/Git.png" height="50" data-toggle="tooltip" data-placement="bottom" title="Git" class="d-flex align-self-center" width="50"/>
+                            <img src="images/knowledge/sql.png" height="50" data-toggle="tooltip" data-placement="bottom" title="MySQL" class="d-flex align-self-center" width="50"/>
+                            <img src="images/knowledge/mongoDB.jpg" height="50" data-toggle="tooltip" data-placement="bottom" title="MongoDB" class="d-flex align-self-center" width="50"/>
+                            <img src="images/knowledge/gcp.png" height="50" data-toggle="tooltip" data-placement="bottom" title="GCP" class="d-flex align-self-center" width="50"/>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="vue" class="card">
+                        <div class="card-header">
+                          <div class="d-flex align-content-center">
+                            <img src="images/knowledge/vue.png" height="50" width="50"/>
+                            <div class="ms-2 d-flex align-self-end"><h2>Vue3</h2></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <ul class="check-list">
+                            <li>SFC</li>
+                            <li>Data Properties, computed , methods</li>
+                            <li>Dependancy injection</li>
+                            <li>Props, Slots , events</li>
+                            <li>Vue Router</li>
+                            <li>Mixins, Plugins</li>
+                            <li>Composistion APIs</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                      <div id="flutter" class="card">
+                        <div class="card-header">
+                          <div class="d-flex align-content-center">
+                            <img src="images/knowledge/flutter.png" height="50" width="50"/>
+                            <div class="ms-2 d-flex align-self-end"><h2>Flutter</h2></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <ul class="check-list">
+                            <li>MVC Architecture</li>
+                            <li>Widgets</li>
+                            <li>Designing reusable layouts</li>
+                            <li>Package and plugins installation</li>
+                            <li>Routing, API utilization</li>
+                            <li>Playstore Deployment</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                      <div id="android" class="card">
+                        <div class="card-header">
+                          <div class="d-flex align-content-center">
+                            <img src="images/knowledge/android.png" height="50" width="50"/>
+                            <div class="ms-2 d-flex align-self-end"><h2>Android</h2></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <ul class="check-list">
+                            <li>Android Studio</li>
+                            <li>MVC Architecture</li>
+                            <li>Developing resulable components</li>
+                            <li>SQLite Offline Storage</li>
+                            <li>API integration</li>
+                            <li>Playstore Deployment</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /Knowledge Subpage -->
+
+
+        </div>
+      </div>
+      <!-- /Page changer wrapper -->
+    </div>
+    <!-- /Main Content -->
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/pages-switcher.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/validator.js"></script>
+  <script src="js/jquery.shuffle.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/tilt.jquery.min.js"></script>
+  <script src="js/jquery.hoverdir.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function showMenu() {
+      $('header').toggleClass('mobile-menu-hide');
+    }
+  </script>
+ 
+</body>
+</html>
